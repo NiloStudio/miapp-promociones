@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,500&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&family=Rock+Salt&family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.encabezado{
+   background-image : linear-gradient(to top, violet,#ffff);
+    
+
+ }
+ 
+ .encabezado ul{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+ }
+
+ .encabezado li a {
+     
+     color: rgb(2, 6, 9);
+     padding: 10px;
+    
+ }
+ 
+ body{
+    background-color: rgb(4, 4, 4);
+    font-family: 'Poppins', sans-serif;
+ }
+
+.tittle h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffff;
+}
+
+
+.cointainer{
+    background-color: aliceblue;
+    width: 80%;
+    height: 100%;
+    margin: 1.6em auto;
+    text-align: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    
+    }
+
+.cointainer> .header,
+.cointainer> .content,
+.cointainer> .sidebar,
+.cointainer> .div{
+    background-color: aliceblue;
+    padding: 20px;
+    border: 1px solid black;
+
+
+}
+
+.cointainer .header{
+    grid-column: 1/6;
+   
+}
+
+.cointainer .content{
+    grid-column: span 3;
+    
+
+}
+
+
+
+.article{
+    padding: 40px;
+}
+
+
+.cointainer .sidebar__img {
+    padding: 10px;  
+    
+    
+}
+
+
+.cointainer .sidebar__img:hover {
+cursor: pointer;
+
+}
+
+
+.piedepagina{
+background-color: rgb(19, 18, 19);
+margin: 1px; 
+content: 70px;  
+}
+.piedepagina__parrafo{
+    margin: 0,5px;
+   
+    text-align: center;
+   color: aliceblue;  
+
+}
+
+@media screen and (max-width: 500px){
+    
+
+
+.cointainer{
+    background-color: rgb(115, 199, 138);
+    width: 80%;
+    height: 100%;
+    margin: 1.6em auto;
+    text-align: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    
+    }
+
+.cointainer> .header,
+.cointainer> .content,
+.cointainer> .sidebar,
+.cointainer> .div{
+    background-color: aliceblue;
+    padding: 20px;
+    border: 1px solid black;
+}
+   
+.cointainer .header{
+    grid-column: 2;
+   
+}
+
+.cointainer .content{
+    grid-column: 2;
+    
+
+}
+
+.cointainer .sidebar{
+    grid-column: 2;
+}
+}
