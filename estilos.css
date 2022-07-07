@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ 
+.main {
+    background-image: url(../multimedia/cielo.jpg);
+
+}
+
+.main h1{
+    font-size: 50px;
+    color: black;
+}
+
+.main img{
+    border-radius: 75%;
+    
+    margin-top: 50px;
+    content: 300px;
+    padding: 20px;
+}
+
+.main p{
+    color: aliceblue;
+}
+
+
+.section{
+  
+    background-image: url("../multimedia/PARALLAX.jpg");
+    height: 400px;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin-bottom: 0,5px;
+   
+    
+
+    border: solid 4px black;
+    color: black;
+    
+    }
+
+    .section p{
+        color: black;
+    }
+
+
+
+    .footer{
+    background-color: rgb(2, 2, 2);
+    color: aliceblue;
+    
+}
+
+
+ 
+   
+   
+    
