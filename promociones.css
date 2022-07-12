@@ -7,31 +7,42 @@
 }
 
 
-.encabezado{
-   background-image : linear-gradient(to top, violet,#ffff);
-    
 
- }
- 
- .encabezado ul{
+ul{
     display: flex;
     flex-direction: row;
     padding: 20px;
     align-items: center;
     justify-content: center;
     list-style-type: none;
+    background-image : linear-gradient(to top, rgb(55, 44, 55),#ffff);
  }
 
- .encabezado li a {
-     
-     color: rgb(2, 6, 9);
-     padding: 10px;
-    
+ li a {
+
+
+ padding: 10px;
+ text-decoration: none;
  }
+
  
+ .article p{
+    font-style: italic;
+ }
+ .article h1{
+    font-size: 30px;
+ }
+
+.header h1{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
  body{
-    background-color: rgb(4, 4, 4);
+    background-image: url(../multimedia/img1.jpg);
     font-family: 'Poppins', sans-serif;
+
  }
 
 .tittle h1{
@@ -39,7 +50,15 @@
     text-align: center;
     font-size: 30px;
     color: #ffff;
+
+
 }
+
+
+header{
+    border: solid 2px black;
+}
+
 
 
 .cointainer{
@@ -56,7 +75,7 @@
 
 .cointainer> .header,
 .cointainer> .content,
-.cointainer> .sidebar,
+.cointainer> .cajas,
 .cointainer> .div{
     background-color: aliceblue;
     padding: 20px;
@@ -83,17 +102,16 @@
 }
 
 
-.cointainer .sidebar__img {
-    padding: 10px;  
-    
-    
+.cajas__img {
+    padding: 10px;      
 }
 
 
-.cointainer .sidebar__img:hover {
+.cointainer .cajas__img:hover {
 cursor: pointer;
 
 }
+
 
 
 .piedepagina{
@@ -101,11 +119,10 @@ background-color: rgb(19, 18, 19);
 margin: 1px; 
 content: 70px;  
 }
-.piedepagina__parrafo{
+.piedepagina p{
     margin: 0,5px;
-   
     text-align: center;
-   color: aliceblue;  
+    color: aliceblue;  
 
 }
 
@@ -127,7 +144,7 @@ content: 70px;
 
 .cointainer> .header,
 .cointainer> .content,
-.cointainer> .sidebar,
+.cointainer> .cajas,
 .cointainer> .div{
     background-color: aliceblue;
     padding: 20px;
@@ -145,7 +162,7 @@ content: 70px;
 
 }
 
-.cointainer .sidebar{
+.cointainer .cajas{
     grid-column: 2;
 }
 }
