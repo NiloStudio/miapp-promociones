@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sarala', sans-serif;
+    
+}
+
+body h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+   
+}
+body form{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 7px;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+
+input:focus {
+    height: 30px;
+    background-color: yellow;
+}
+
+
+.gracias{
+    display: none;
+}
+input [type="checkbox"]:checked ~ .gracias{
+    display: initial;
+}
+
+
+.footer{
+    background-color: rgb(19, 18, 19);
+    margin: 1px; 
+      
+    }
+    .footer p{
+        margin: 0,5px;
+        text-align: center;
+        color: aliceblue
+    }
