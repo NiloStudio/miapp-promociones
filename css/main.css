@@ -1,2 +1,93 @@
-h1 {
-  color: red; }
+body {
+  background-color: black; }
+  body ul {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background-image: linear-gradient(to top, #372c37, #ffff); }
+    body ul li {
+      padding: 10px;
+      font-size: 30px; }
+      body ul li a {
+        padding: 12px;
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif; }
+        body ul li a:hover {
+          color: aliceblue; }
+  body h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #ffff; }
+  body .cointainer {
+    background-color: aliceblue;
+    width: 80%;
+    height: 100%;
+    margin: 1.6em auto;
+    text-align: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr); }
+    body .cointainer .header {
+      border: solid 2px black; }
+      body .cointainer .header h1 {
+        font-weight: bold;
+        font-size: 30px;
+        font-family: fantasy; }
+    body .cointainer .article {
+      padding: 150px; }
+      body .cointainer .article p {
+        font-style: italic; }
+      body .cointainer .article h1 {
+        font-size: 30px; }
+    body .cointainer .cajas img {
+      padding: 10px;
+      width: 350px;
+      height: 400px; }
+      body .cointainer .cajas img:hover {
+        cursor: pointer; }
+    body .cointainer .cointainer > .header,
+    body .cointainer .cointainer > .content,
+    body .cointainer .cointainer > .cajas,
+    body .cointainer .cointainer > .div {
+      background-color: aliceblue;
+      padding: 20px;
+      border: 1px solid black; }
+    body .cointainer .cointainer .header {
+      grid-column: 1/6; }
+    body .cointainer .cointainer .content {
+      grid-column: span 3; }
+  body .piedepagina {
+    background-color: #131213;
+    padding: 30px; }
+    body .piedepagina p {
+      margin: 0,6px;
+      text-align: center;
+      color: aliceblue;
+      background-color: #131213; }
+
+@media screen and (max-width: 500px) {
+  .cointainer {
+    background-color: #73c78a;
+    width: 80%;
+    height: 100%;
+    margin: 1.6em auto;
+    text-align: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr); }
+    .cointainer .cointainer > .header,
+    .cointainer .cointainer > .content,
+    .cointainer .cointainer > .cajas,
+    .cointainer .cointainer > .div {
+      background-color: aliceblue;
+      padding: 20px;
+      border: 1px solid black; }
+    .cointainer .cointainer .header {
+      grid-column: 2; }
+    .cointainer .cointainer .content {
+      grid-column: 2; }
+    .cointainer .cointainer .cajas {
+      grid-column: 2; } }
