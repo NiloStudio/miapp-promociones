@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    padding: 0 15px;}
+.contendedor{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;}
+h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 50px;}
+span{
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;}
+.casillero{
+    box-shadow: 0 0 20px 0 #fff;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;}
+.contenedor .casillero .leon{
+    border-radius: 40%;
+    position: relative;
+    top: 45px;
+    content: 300px;
+    height: 150px;
+    transition: 3s;}
+.casillero .leon:hover{
+height: 155px ;}
+.forma{
+    background-color: rgb(33, 32, 32);
+    display: flex;
+    flex-direction: row;}
+.forma p{
+    padding: 20px;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.main p{
+    color: aliceblue;
+}
+.info{
+    text-align: center;}
+.info h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serifs;
+    text-decoration: underline;
+    padding: 10px;}
+.info h3{
+    color: yellow;}
+.secundario{
+   background-image: url("../multimedia/PARALLAX.jpg");
+   height: 400px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-bottom: 0,5px;
+   border: solid 4px black;
+   color: black;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   color: #fff;
+   font-size: 20px;
+   flex-wrap: wrap;}
+   .piedepagina {
+    background-color: #131213;
+    padding: 30px; }
+        .piedepagina p {
+        margin: 0,6px;
+        text-align: center;
+        color: aliceblue;
+        background-color: #131213;}
+    
+        @media screen and (max-width: 500px){
+            .contendedor{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                ;}
+                h1{
+                text-align: center;
+                font-size: 35px;
+                padding: 20px;}
+                .forma p{
+                padding: 10px;
+                font-size: 20px}
+                .info h2{
+                    font-size: 40px;
+                }
+                .contenedor .casillero .leon{
+                    border-radius: 40%;
+                    position: relative;
+                    top: 1px;
+                    content: 300px;
+                    height: 150px;
+                    transition: 3s;
+                    padding: 5px;}     
+                    
+                .casillero{
+                display: grid;
+                grid-template-columns: 1fr;}
+           
+        }
+
+    
+
+   
+    

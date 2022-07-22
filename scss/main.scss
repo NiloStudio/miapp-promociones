@@ -1,1 +1,51 @@
-@import "promocion";
+
+/* MAP GET*/
+ 
+
+$amigos: (
+    juan: white,
+    Pedro: brown,
+    Dario: yellow,
+    Nicolas:black
+);
+
+
+
+
+body{
+    background-color: map-get($amigos, Nicolas );
+
+}
+
+/*EXTENDS*/
+.div{
+    background-color: black;
+    font-size: 30x;
+    padding: 20px;
+    color: aliceblue;
+
+}
+.div__diadelpadre{
+    @extend .piedepagina;
+    background-color: brown;
+}
+
+.div__diadelaindependencia{
+    @extend .piedepagina;
+    background-color: yellow;
+
+}
+
+/*MIXINS de medida*/
+@mixin flexbase($display,$direction,$wrap){
+    display:$display ;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+
+}
+
+.piedepagina{
+    @include flexbase(flex, row, wrap)
+}
+
+    

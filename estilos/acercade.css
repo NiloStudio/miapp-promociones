@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Sarala&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(246, 240, 240);
+}
+
+.row{
+    border: solid 5px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sarala', sans-serif;
+    
+}
+
+.row h2{
+    background-color: black;
+    background-repeat: repeat ;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+  
+    color: antiquewhite;
+    
+
+}
+
+.row ul{
+    font-size: 20px;
+    
+    
+  
+}
+
+.row iframe{
+    padding: 20px;
+    
+}
+
+
+.row p{
+    background-color: rgb(12, 11, 12);
+    color: aliceblue;
+    padding: 15px;
+}
+
+

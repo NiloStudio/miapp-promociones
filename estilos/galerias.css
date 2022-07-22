@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  background-color: black; 
+ 
+}
+  body ul {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background-image: linear-gradient(to top, #372c37, #ffff); }
+    body ul li {
+      padding: 10px;
+      font-size: 15px; }
+      body ul li a {
+        padding: 12px;
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif; }
+        body ul li a:hover {
+          color: aliceblue; }
+  body .main {
+    box-shadow: 2px color gray; }
+    body .main h1 {
+      color: aliceblue;
+      padding: 20px;
+      text-align: center;
+      font-size: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+    body .main .galery {
+      border: solid 2px white;
+      padding-top: 250px;
+      padding-bottom: 20px;
+      padding-left: 350px;
+      display: grid;
+      grid-template-columns: 160px 160px 160px 160px;
+      grid-template-rows: 260px 260px 260px  260px;
+      grid-template-areas: "img1 img1 img3 img5" "img1 img1 img3 img5" "img2 img2 img4 img5" "img2 img2 img4 img5";
+      gap: 20px; }
+      body .main .galery .gallery__picture--g1 {
+        grid-area: img1; }
+      body .main .galery .gallery__picture--g2 {
+        grid-area: img2; }
+      body .main .galery .gallery__picture--g3 {
+        grid-area: img3; }
+      body .main .galery .gallery__picture--g4 {
+        grid-area: img4; }
+      body .main .galery .gallery__picture--g5 {
+        grid-area: img5; }
+      body .main .galery .galery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      body .main .galery .gallery__picture {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden; }
+      body .main .galery .gallery__picture::before {
+        content: "NILO STUDIO";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: scale(0);
+        transition: transform .4s;
+        background-color: #5b40f3a6;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px; }
+      body .main .galery .gallery__picture:hover::before {
+        transform: scale(3); }
+  body .footer p {
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 15px; }
+
+
+
+@media screen and (max-width: 500px){
+
+.galery{
+grid-template-columns: 1fr ;
+padding-left: none;
+grid-area: 
+"img1"
+"img2"
+"img3"
+"img4"
+"img5"
+}
+}
